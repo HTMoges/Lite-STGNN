@@ -1,0 +1,144 @@
+Seed set to 42
+Using default `ModelCheckpoint`. Consider installing `litmodels` package to enable `LitModelCheckpoint` for automatic upload to the Lightning model registry.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/localhome/henok/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py:76: Starting from v1.9.0, `tensorboardX` has been removed as a dependency of the `pytorch_lightning` package, due to potential conflicts with other packages in the ML ecosystem. For this reason, `logger=True` will use `CSVLogger` as the default logger, unless the `tensorboard` or `tensorboardX` packages are found. Please `pip install lightning[extra]` or one of them to enable TensorBoard support by default
+You are using a CUDA device ('NVIDIA GeForce RTX 4090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+[Traffic train] Data shape: (12280, 862)
+[Traffic val] Data shape: (1852, 862)
+[Traffic test] Data shape: (3604, 862)
+================================================================================
+Lite-STGNN: Lightweight Spatial-Temporal Graph Neural Network
+================================================================================
+
+[Basic Config]
+  Dataset:            traffic
+  Data Root:          /localhome/henok/Dev/modern_tcn_gwn_project_fullrun/data
+  Seq Len:            96
+  Pred Len:           720
+  Batch Size:         32
+  Epochs:             50
+  Seed:               42
+  Learning Rate:      0.0005
+
+[Model Parameters]
+  adj_rank:           24
+  adj_topk:           10
+  adj_tau:            1.0
+  self_loop_alpha:    0.2
+  gate_mode:          band
+  prop_orders:        2
+  use_temporal_head:  True
+  temporal_head_ratio: 0.7
+  temporal_head_dropout: 0.1
+  use_input_residual: True
+  input_residual_dropout: 0.0
+  use_feature_norm:   False
+  residual_dropout:   0.1
+  lambda_sparsity:    0.0
+  lambda_residual:    0.0
+
+[Run Parameters]
+  Total Params:       976443
+  Trainable Params:   976443
+
+[GPU]
+  Use GPU:            True
+  GPU:                0
+  GPU Name:           NVIDIA GeForce RTX 4090
+================================================================================
+>>>>>>>start training: traffic_L96_P720_seed42>>>>>>>>>>>>>>>>>>>>>>>>>>
+Parameters: 976443
+================================================================================
+Metric val_mse_mean_horizons improved. New best score: 0.467
+Metric val_mse_mean_horizons improved by 0.020 >= min_delta = 0.0. New best score: 0.446
+Metric val_mse_mean_horizons improved by 0.008 >= min_delta = 0.0. New best score: 0.438
+Metric val_mse_mean_horizons improved by 0.005 >= min_delta = 0.0. New best score: 0.433
+Metric val_mse_mean_horizons improved by 0.004 >= min_delta = 0.0. New best score: 0.429
+Metric val_mse_mean_horizons improved by 0.004 >= min_delta = 0.0. New best score: 0.426
+Metric val_mse_mean_horizons improved by 0.001 >= min_delta = 0.0. New best score: 0.424
+Metric val_mse_mean_horizons improved by 0.006 >= min_delta = 0.0. New best score: 0.418
+Metric val_mse_mean_horizons improved by 0.001 >= min_delta = 0.0. New best score: 0.417
+Metric val_mse_mean_horizons improved by 0.003 >= min_delta = 0.0. New best score: 0.414
+Metric val_mse_mean_horizons improved by 0.004 >= min_delta = 0.0. New best score: 0.410
+Metric val_mse_mean_horizons improved by 0.001 >= min_delta = 0.0. New best score: 0.408
+Metric val_mse_mean_horizons improved by 0.000 >= min_delta = 0.0. New best score: 0.408
+Metric val_mse_mean_horizons improved by 0.000 >= min_delta = 0.0. New best score: 0.408
+Metric val_mse_mean_horizons improved by 0.001 >= min_delta = 0.0. New best score: 0.407
+Metric val_mse_mean_horizons improved by 0.001 >= min_delta = 0.0. New best score: 0.406
+Metric val_mse_mean_horizons improved by 0.001 >= min_delta = 0.0. New best score: 0.405
+Metric val_mse_mean_horizons improved by 0.002 >= min_delta = 0.0. New best score: 0.403
+Monitored metric val_mse_mean_horizons did not improve in the last 10 records. Best score: 0.403. Signaling Trainer to stop.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1]
+Epoch 00: Train Loss=0.429494 | Val Loss=0.466724 ✓ [NEW BEST]
+Epoch 01: Train Loss=0.348615 | Val Loss=0.446355 ✓ [NEW BEST]
+Epoch 02: Train Loss=0.334488 | Val Loss=0.437924 ✓ [NEW BEST]
+Epoch 03: Train Loss=0.326588 | Val Loss=0.432932 ✓ [NEW BEST]
+Epoch 04: Train Loss=0.321407 | Val Loss=0.429100 ✓ [NEW BEST]
+Epoch 05: Train Loss=0.317060 | Val Loss=0.425578 ✓ [NEW BEST]
+Epoch 06: Train Loss=0.313225 | Val Loss=0.424091 ✓ [NEW BEST]
+Epoch 07: Train Loss=0.309384 | Val Loss=0.418446 ✓ [NEW BEST]
+Epoch 08: Train Loss=0.306045 | Val Loss=0.417036 ✓ [NEW BEST]
+Epoch 09: Train Loss=0.302892 | Val Loss=0.414084 ✓ [NEW BEST]
+Epoch 10: Train Loss=0.300251 | Val Loss=0.415142
+Epoch 11: Train Loss=0.297789 | Val Loss=0.409668 ✓ [NEW BEST]
+Epoch 12: Train Loss=0.295672 | Val Loss=0.408337 ✓ [NEW BEST]
+Epoch 13: Train Loss=0.293800 | Val Loss=0.408665
+Epoch 14: Train Loss=0.292538 | Val Loss=0.408277 ✓ [NEW BEST]
+Epoch 15: Train Loss=0.291556 | Val Loss=0.407847 ✓ [NEW BEST]
+Epoch 16: Train Loss=0.290781 | Val Loss=0.409014
+Epoch 17: Train Loss=0.290133 | Val Loss=0.406637 ✓ [NEW BEST]
+Epoch 18: Train Loss=0.289606 | Val Loss=0.407673
+Epoch 19: Train Loss=0.289035 | Val Loss=0.407986
+Epoch 20: Train Loss=0.288620 | Val Loss=0.405880 ✓ [NEW BEST]
+Epoch 21: Train Loss=0.288275 | Val Loss=0.406389
+Epoch 22: Train Loss=0.288029 | Val Loss=0.405956
+Epoch 23: Train Loss=0.287743 | Val Loss=0.406628
+Epoch 24: Train Loss=0.287431 | Val Loss=0.406485
+Epoch 25: Train Loss=0.287114 | Val Loss=0.405077 ✓ [NEW BEST]
+Epoch 26: Train Loss=0.286745 | Val Loss=0.405285
+Epoch 27: Train Loss=0.286521 | Val Loss=0.405930
+Epoch 28: Train Loss=0.286098 | Val Loss=0.406886
+Epoch 29: Train Loss=0.285955 | Val Loss=0.407589
+Epoch 30: Train Loss=0.283750 | Val Loss=0.403171 ✓ [NEW BEST]
+Epoch 31: Train Loss=0.283374 | Val Loss=0.404256
+Epoch 32: Train Loss=0.283358 | Val Loss=0.404321
+Epoch 33: Train Loss=0.283249 | Val Loss=0.404170
+Epoch 34: Train Loss=0.283065 | Val Loss=0.404708
+Epoch 35: Train Loss=0.282962 | Val Loss=0.403892
+Epoch 36: Train Loss=0.282851 | Val Loss=0.404806
+Epoch 37: Train Loss=0.282799 | Val Loss=0.403712
+Epoch 38: Train Loss=0.282642 | Val Loss=0.405346
+Epoch 39: Train Loss=0.282601 | Val Loss=0.403978
+Epoch 40: Train Loss=0.282371 | Val Loss=0.405533
+================================================================================
+Training complete in 13.03 minutes
+================================================================================
+
+>>>>>>>testing: traffic_L96_P720_seed42<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+================================================================================
+TEST RESULTS
+================================================================================
+MSE: H96=0.5300  H192=0.5191  H336=0.5298  H720=0.5640  Mean=0.5357
+MAE: H96=0.3105  H192=0.3066  H336=0.3137  H720=0.3357  Mean=0.3166
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+        test_mae            0.3356718122959137
+     test_mae_at_192        0.3065682351589203
+     test_mae_at_336         0.313732773065567
+     test_mae_at_720        0.3356717526912689
+     test_mae_at_96         0.31049099564552307
+ test_mae_mean_horizons     0.3166159391403198
+        test_mse            0.5639566779136658
+     test_mse_at_192        0.5190659761428833
+     test_mse_at_336        0.5297770500183105
+     test_mse_at_720        0.5639567971229553
+     test_mse_at_96         0.5299742221832275
+ test_mse_mean_horizons     0.5356935262680054
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

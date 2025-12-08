@@ -1,0 +1,17 @@
+dataset: traffic
+seq-len: 96
+pred-len: 720
+epochs: 100
+batch-size: 8
+seed: 42
+learning-rate: 0.0005
+adj-rank: 24
+adj-topk: 10
+adj-tau: 1.0
+self-loop-alpha: 0.3
+gate-mode: band
+prop-orders: 3
+use-temporal-head: true
+temporal-head-ratio: 0.7
+use-input-residual: true
+residual-dropout: 0.1
