@@ -73,7 +73,7 @@ If you find this work useful, please cite our paper:
 @inproceedings{moges2026litestgnn,
   title={A lightweight Spatial-Temporal Graph Neural Network for Long-term Time Series Forecasting},
   author={Moges, H.T. and Moodley, D.},
-  booktitle={Proceedings of the 16th International Conference on Agents and Artificial Intelligence (ICAART)},
+  booktitle={Proceedings of the 18th International Conference on Agents and Artificial Intelligence (ICAART)},
   year={2026},
   note={arXiv:2512.17453}
 }
