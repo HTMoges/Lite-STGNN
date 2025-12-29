@@ -87,7 +87,6 @@ We appreciate the following repositories for their valuable code and datasets:
 
 - [Time-Series-Library](https://github.com/thuml/Time-Series-Library) - Benchmark datasets 
 - [LTSF-Linear](https://github.com/cure-lab/LTSF-Linear) - DLinear implementation
-- [Graph-WaveNet](https://github.com/nnzhan/Graph-WaveNet) - Learnable adjacency matrix inspiration
 
 ## License
 
