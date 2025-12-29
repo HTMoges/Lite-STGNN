@@ -1,10 +1,12 @@
+# Reference configuration for Traffic dataset
+# Note: Use reproduction script or CLI arguments for exact paper hyperparameters
 dataset: traffic
 seq-len: 96
 pred-len: 720
-epochs: 100
+epochs: 50
 batch-size: 8
 seed: 42
-learning-rate: 0.0005
+learning-rate: 0.0008
 adj-rank: 24
 adj-topk: 10
 adj-tau: 1.0

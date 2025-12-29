@@ -1,10 +1,12 @@
+# Reference configuration for Exchange dataset
+# Note: Use reproduction script or CLI arguments for exact paper hyperparameters
 dataset: exchange
 seq-len: 96
 pred-len: 720
 epochs: 50
 batch-size: 16
 seed: 42
-learning-rate: 0.0008
+learning-rate: 0.001
 adj-rank: 4
 adj-topk: 4
 adj-tau: 1.0

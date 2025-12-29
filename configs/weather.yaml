@@ -1,10 +1,12 @@
+# Reference configuration for Weather dataset
+# Note: Use reproduction script or CLI arguments for exact paper hyperparameters
 dataset: weather
 seq-len: 96
 pred-len: 720
-epochs: 100
+epochs: 50
 batch-size: 16
 seed: 42
-learning-rate: 0.0008
+learning-rate: 0.0005
 adj-rank: 16
 adj-topk: 16
 adj-tau: 0.8
