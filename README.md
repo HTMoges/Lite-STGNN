@@ -55,7 +55,7 @@ python src/lite_stgnn_modular.py \
 Lite-STGNN combines temporal modeling with learnable spatial dependencies for efficient long-term time-series forecasting:
 
 <div align="center">
-  <img src="archive/Lite-STGNN_architecture.png" alt="Lite-STGNN Architecture" width="800"/>
+  <img src="docs/Lite-STGNN_architecture.png" alt="Lite-STGNN Architecture" width="800"/>
 </div>
 
 **Key Components:**
