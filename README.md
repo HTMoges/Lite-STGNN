@@ -1,14 +1,14 @@
 # Lite-STGNN
 
-Official PyTorch implementation of **Lite-STGNN: A lightweight Spatial-Temporal Graph Neural Network for Long-term Time Series Forecasting**
+Official PyTorch implementation of **Lite-STGNN: A Lightweight Spatial-Temporal Graph Neural Network for Long-Term Time Series Forecasting**
 
 [![arXiv](https://img.shields.io/badge/arXiv-2512.17453-b31b1b.svg)](https://arxiv.org/abs/2512.17453)
-[![ICAART 2026](https://img.shields.io/badge/ICAART-2026-blue.svg)](https://icaart.scitevents.org/)
+[![ICAART 2026](https://img.shields.io/badge/ICAART-2026-blue.svg)](https://www.scitepress.org/Link.aspx?doi=10.5220/0014322300004052)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.0+](https://img.shields.io/badge/pytorch-2.0+-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **Accepted to be presented at ICAART 2026** | [Paper](https://arxiv.org/abs/2512.17453)
+> [Published Paper](https://www.scitepress.org/Link.aspx?doi=10.5220/0014322300004052) | [arXiv](https://arxiv.org/abs/2512.17453)
 
 ## Get Started
 
@@ -71,14 +71,18 @@ If you find this work useful, please cite our paper:
 
 ```bibtex
 @inproceedings{moges2026litestgnn,
-  title={A lightweight Spatial-Temporal Graph Neural Network for Long-term Time Series Forecasting},
+  title={A Lightweight Spatial-Temporal Graph Neural Network for Long-Term Time Series Forecasting},
   author={Moges, H.T. and Moodley, D.},
   booktitle={Proceedings of the 18th International Conference on Agents and Artificial Intelligence (ICAART)},
+  volume={3},
+  pages={2743--2750},
   year={2026},
-  note={arXiv:2512.17453}
+  publisher={SciTePress},
+  doi={10.5220/0014322300004052}
 }
 ```
 
+**Published paper:** https://www.scitepress.org/Link.aspx?doi=10.5220/0014322300004052  
 **arXiv preprint:** https://arxiv.org/abs/2512.17453
 
 ## Acknowledgement
@@ -87,6 +91,7 @@ We appreciate the following repositories for their valuable code and datasets:
 
 - [Time-Series-Library](https://github.com/thuml/Time-Series-Library) - Benchmark datasets 
 - [LTSF-Linear](https://github.com/cure-lab/LTSF-Linear) - DLinear implementation
+- [Graph-WaveNet](https://github.com/nnzhan/Graph-WaveNet) - Learnable adjacency matrix inspiration
 
 ## License
 
